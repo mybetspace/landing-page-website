@@ -69,7 +69,7 @@
               Vai continuar gastando seu tempo com atividades chatas e
               repetitivas como planilhar? Pois o Red você pode recuperar apesar
               de não dever(rsrs), mas o tempo você nunca vai conseguir
-              recuperar!
+              recuperar.
             </p>
             <h3 class="text-primary">A final quanto vale seu tempo?</h3>
             <div class="lead mt-6 text-center">
