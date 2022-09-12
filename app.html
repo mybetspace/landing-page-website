@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+
+<head {{ HEAD_ATTRS }}>
+  {{ HEAD }}
+  <script>
+    const gaScript = document.querySelector('script[name="ga-script"]')
+
+    if (gaScript) {
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        window.dataLayer.push(arguments)
+      }
+
+      gtag('js', new Date())
+
+      gtag('config', 'G-DYMJG8L6XZ')
+    }
+  </script>
+</head>
+
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
+</body>
+
+</html>

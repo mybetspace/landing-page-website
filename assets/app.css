@@ -1,0 +1,123 @@
+html, body {
+  font-family: 'Poppins', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #fa541c, #d4380d), url('~assets/bg-stadium-4.jpg');
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+.ant-input {
+  height: 54px;
+  border-radius: 8px;
+  padding: 0 32px;
+  background: #F4F7FA;
+  background: #ebf4fa;
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+  font-weight: 400;
+}
+
+.ant-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7c8794;
+  opacity: 1;
+}
+
+.ant-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #7c8794;
+}
+
+.ant-input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #7c8794;
+}
+
+.ant-input:hover {
+  border-color: transparent;
+  outline: none;
+}
+
+.ant-input-affix-wrapper .ant-input-prefix {
+  top: 26px;
+  left: 18px;
+  color: #858D9A;
+}
+
+.ant-input-affix-wrapper .ant-input {
+  border-color: transparent;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.ant-input-affix-wrapper .ant-input:not(:first-child) {
+  padding-left: 42px;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+  border-color: transparent;
+}
+
+.ant-form-explain {
+  font-size: 12px;
+}
+
+.ant-form-vertical .ant-form-item {
+  padding-bottom: 0;
+}
+
+.ant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-highlight {
+  color: #000;
+  text-shadow: none !important;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px #5d5f63;
+}
+
+.grecaptcha-badge {
+  z-index: 1;
+}
