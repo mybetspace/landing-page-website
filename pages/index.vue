@@ -1,7 +1,16 @@
 <template>
   <div class="container-fluid p-0">
     <header
-      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top bg-white"
+      class="
+        d-flex
+        flex-wrap
+        justify-content-center
+        py-3
+        mb-4
+        border-bottom
+        fixed-top
+        bg-white
+      "
     >
       <a
         href="/"
@@ -13,7 +22,7 @@
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a href="#home" class="nav-link active" aria-current="page"
-            ><i class="bi bi-house-fill"></i> Home</a
+            ><i class="bi bi-house-fill"></i> Teste</a
           >
         </li>
         <li class="nav-item">
@@ -36,11 +45,16 @@
           </h1>
           <div class="col-lg-6 mx-auto">
             <p class="lead my-6">
-              <b>Cansado de perder seu tempo anotando suas apostas em planilhas e administrar manualmente seus investimentos? Então veio ao lugar certo.</b>
-              A My Bet Space é uma plataforma profissional de gestão de banca para trade
-              esportivo na exchange da betfair. Temos como objetivo economizar seu tempo ao
-              máximo, automatizando o maior número de funcionalidades possíveis
-              para que você  consiga perder menos tempo com trabalhos repetitivos, lucrativo e
+              <b
+                >Cansado de perder seu tempo anotando suas apostas em planilhas
+                e administrar manualmente seus investimentos? Então veio ao
+                lugar certo.</b
+              >
+              A My Bet Space é uma plataforma profissional de gestão de banca
+              para trade esportivo na exchange da betfair. Temos como objetivo
+              economizar seu tempo ao máximo, automatizando o maior número de
+              funcionalidades possíveis para que você consiga perder menos tempo
+              com trabalhos repetitivos, lucrativo e
               <b>profissional</b>.
             </p>
             <div class="text-black-50 h3 mb-3">
@@ -73,8 +87,8 @@
             </p>
             <h3 class="text-primary">A final quanto vale seu tempo?</h3>
             <div class="lead mt-6 text-center">
-              Vamos ajudar você a economizar o seu tempo e gerar números para que
-              consiga focar no trade esportivo.
+              Vamos ajudar você a economizar o seu tempo e gerar números para
+              que consiga focar no trade esportivo.
             </div>
           </div>
         </div>
@@ -144,7 +158,13 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                   <div
-                    class="card-header text-white bg-primary border-primary py-3"
+                    class="
+                      card-header
+                      text-white
+                      bg-primary
+                      border-primary
+                      py-3
+                    "
                   >
                     <h4 class="my-0 fw-normal text-center text-white">
                       Mensal
@@ -173,7 +193,13 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                   <div
-                    class="card-header text-white bg-primary border-primary py-3"
+                    class="
+                      card-header
+                      text-white
+                      bg-primary
+                      border-primary
+                      py-3
+                    "
                   >
                     <h4 class="my-0 fw-normal text-center text-white">
                       Trimestral
@@ -205,7 +231,13 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                   <div
-                    class="card-header text-white bg-primary border-primary py-3"
+                    class="
+                      card-header
+                      text-white
+                      bg-primary
+                      border-primary
+                      py-3
+                    "
                   >
                     <h4 class="my-0 fw-normal text-center text-white">
                       Semestral
@@ -237,11 +269,15 @@
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary">
                   <div
-                    class="card-header text-white bg-primary border-primary py-3"
+                    class="
+                      card-header
+                      text-white
+                      bg-primary
+                      border-primary
+                      py-3
+                    "
                   >
-                    <h4 class="my-0 fw-normal text-center text-white">
-                      Anual
-                    </h4>
+                    <h4 class="my-0 fw-normal text-center text-white">Anual</h4>
                   </div>
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">
