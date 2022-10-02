@@ -50,13 +50,13 @@
       </a-dropdown>
     </header>
     <main>
-      <section id="home" class="section section-padding">
+      <section id="home" class="section-home section-padding mt-6">
         <div class="mt-5 section-width">
-          <h1 class="display-4 fw-bold pb-1">
+          <h1 class="display-4 fw-bold pb-1 text-justify">
             Deseja fazer sua gestão de apostas de forma rápida e eficiente?
           </h1>
-          <div class="col-lg-6">
-            <p class="lead my-6 pt-6">
+          <div>
+            <p class="lead my-6 pb-6 text-justify">
               <b
                 >Cansado de perder seu tempo anotando suas apostas em planilhas
                 e administrar manualmente seus investimentos? Então veio ao
@@ -69,7 +69,9 @@
               com trabalhos repetitivos, lucrativo e
               <b>profissional</b>.
             </p>
-            <LinkPlataforma />
+            <div class="d-flex justify-content-center">
+              <LinkPlataforma class="col-lg-6" />
+            </div>
           </div>
           <div class="graphic-wrapper">
             <nuxt-img
@@ -96,11 +98,11 @@
                 que consiga focar no trade esportivo.
               </div>
             </div>
-            <LinkPlataforma loading="lazy" />
+            <LinkPlataforma />
           </div>
         </div>
       </section>
-      <section id="features" class="section w-100">
+      <section id="features" class="my-section w-100">
         <div
           id="featured-3"
           class="bg-light w-100 section-padding d-flex flex-column align-items-center feature-wrapper"
@@ -148,7 +150,7 @@
           </div>
         </div>
       </section>
-      <section id="pricing" class="section section-padding">
+      <section id="pricing" class="my-section section-padding">
         <div class="section-width">
           <div class="pricing-header pb-md-4">
             <h1 class="mb-6 text-primary">Preços</h1>
@@ -234,7 +236,7 @@
           </div>
         </div>
       </section>
-      <section id="about" class="section w-100">
+      <section id="about" class="my-section w-100">
         <div
           class="bg-light w-100 section-padding d-flex flex-column align-items-center text-center about-wrapper"
         >
@@ -242,13 +244,13 @@
             class="section-width col-lg-8 d-flex flex-column align-items-center"
           >
             <h1 class="text-primary">Missão</h1>
-            <h4 class="pt-4 pb-2 text-center">
+            <h4 class="pt-4 pb-2 text-justify">
               A My Bet Space tem como missão é ajudar a comunidade de trader
               Esportivo a economizar seu tempo planilhando, auxiliar no dia a
               dia do trade, para que de forma mais ágil a validar consiga seu
               método, para ser mais lucrativo.
             </h4>
-            <p class="text-center">
+            <p class="text-justify">
               Resumindo de uma forma simples a nossa plataforma é uma especie de
               planilha online em que o usuário só precisa preencher o seu método
               e o resto agente faz pra você. Pegamos todos os jogos, nomes dos
@@ -257,11 +259,11 @@
               decisões e conseguir validar seus métodos Você só precisa
               cadastrar seus métodos, preenche-los e analisar seus dados depois.
             </p>
-            <LinkPlataforma class="mt-2 col-lg-6" loading="lazy" />
+            <LinkPlataforma class="mt-2 col-lg-6" />
           </div>
         </div>
       </section>
-      <section id="contact" class="section section-padding">
+      <section id="contact" class="my-section section-padding">
         <div class="section-width">
           <div class="row justify-content-center">
             <div class="col-12">

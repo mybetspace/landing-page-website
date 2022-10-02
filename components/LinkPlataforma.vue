@@ -9,18 +9,7 @@
       class="button-platform-logo"
       src="/logo-white.png"
       alt="Logo do MyBetSpace"
-      :loading="loading"
+      loading="lazy"
     />
   </a>
 </template>
-
-<script>
-export default {
-  props: {
-    loading: {
-      type: String,
-      default: 'eager',
-    },
-  },
-}
-</script>

@@ -21,30 +21,26 @@ h4 {
   height: 24px;
 }
 
-.btn img {
-  height: 30px;
-}
-
 .nav {
   column-gap: 8px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background: #fa541cff;
+  background: #e64d1a;
 }
 
 .nav-link {
-  color: #fa541cff;
+  color: #e64d1a;
 }
 
 .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  color: #fa541cff;
+  color: #e64d1a;
 }
 
 .btn-primary {
-  background: #fa541cff;
+  background: #e64d1a;
   border-color: #fa531cbe;
 }
 
@@ -57,30 +53,20 @@ h4 {
 
 .btn-primary:hover {
   background: #fa531cbe;
-  border-color: #fa541cff;
+  border-color: #e64d1a;
   color: white !important;
 }
 
-.btn-outline-primary {
-  color: #fa531cbe;
-  border-color: #fa531cbe;
-}
-
-.btn-outline-primary:hover {
-  background: #fa531cbe;
-  border-color: #fa541cff;
-}
-
 .text-primary {
-  color: #fa541cff !important;
+  color: #e64d1a !important;
 }
 
 .bg-primary {
-  background-color: #fa541cff !important;
+  background-color: #e64d1a !important;
 }
 
 .border-primary {
-  border-color: #fa541cff !important;
+  border-color: #e64d1a !important;
 }
 
 main {
@@ -89,22 +75,14 @@ main {
   align-items: center;
 }
 
-.section {
+.my-section,
+.section-home {
   padding-top: 80px;
   position: relative;
 }
 
 .section-width {
   max-width: 1300px;
-}
-
-.b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 .bi {
@@ -128,30 +106,6 @@ main {
   border-radius: 0.75rem;
 }
 
-.icon-link {
-  display: inline-flex;
-  align-items: center;
-}
-.icon-link > .bi {
-  margin-top: 0.125rem;
-  margin-left: 0.125rem;
-  transition: transform 0.25s ease-in-out;
-  fill: currentColor;
-}
-.icon-link:hover > .bi {
-  transform: translate(0.25rem);
-}
-
-.icon-square {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
-  border-radius: 0.75rem;
-}
-
 .rounded-4 {
   border-radius: 0.5rem;
 }
@@ -167,22 +121,6 @@ main {
 }
 .text-shadow-3 {
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
-}
-
-.card-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.bd-footer a {
-  color: #495057;
-  text-decoration: none;
-}
-.bd-footer a:hover,
-.bd-footer a:focus {
-  color: #0d6efd;
-  text-decoration: underline;
 }
 
 .icon {
@@ -236,8 +174,11 @@ main {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .section {
-    padding-top: 30px;
+  .my-section {
+    padding-top: 80px;
+  }
+  .section-home {
+    padding-top: 20px;
   }
   .button-platform {
     flex-direction: column;
@@ -312,7 +253,7 @@ main {
 
 .feature-wrapper,
 .about-wrapper {
-  padding: 100px 48px;
+  padding: 150px 48px;
 }
 
 #contact {
