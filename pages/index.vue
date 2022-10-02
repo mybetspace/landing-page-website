@@ -98,7 +98,9 @@
                 que consiga focar no trade esportivo.
               </div>
             </div>
-            <LinkPlataforma />
+            <div class="d-flex justify-content-center col-lg-6">
+              <LinkPlataforma />
+            </div>
           </div>
         </div>
       </section>

@@ -4,7 +4,8 @@
     href="https://app.mybetspace.com"
     aria-label="Ir para a plataforma MyBetSpace"
     target="_blank"
-    >Clique aqui para acessar
+  >
+    <div class="text-center">Clique aqui para acessar</div>
     <nuxt-img
       class="button-platform-logo"
       src="/logo-white.png"

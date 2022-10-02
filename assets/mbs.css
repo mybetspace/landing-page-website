@@ -234,17 +234,13 @@ main {
 }
 
 .button-platform-logo {
-  height: 20px;
+  height: 18px;
 }
 
 .time-wrapper {
   border-radius: 32px;
   padding: 32px 16px;
   margin-top: 48px;
-}
-
-.button-platform-label {
-  white-space: nowrap;
 }
 
 .graphic-wrapper {
