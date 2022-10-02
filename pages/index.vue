@@ -52,6 +52,11 @@
     <main>
       <section id="home" class="section-home section-padding mt-6">
         <div class="mt-5 section-width">
+          <Banner
+            class="pb-6"
+            link="https://bit.ly/2-banner1xbet"
+            image="/2.Barcelona_Partnership_2023_320x100.gif"
+          />
           <h1 class="display-4 fw-bold pb-1 text-justify">
             Deseja fazer sua gestão de apostas de forma rápida e eficiente?
           </h1>
@@ -310,6 +315,12 @@
           </div>
         </div>
       </section>
+      <div class="floating-banner">
+        <Banner
+          link="https://bit.ly/1-Banner1xbet"
+          image="/1.Barcelona_Partnership_2023_340x100.gif"
+        />
+      </div>
     </main>
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Grid container -->
