@@ -24,12 +24,7 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap',
-      },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
     script:
       process.env.DEVELOPMENT_MODE === 'true'
@@ -47,7 +42,7 @@ export default {
   css: ['ant-design-vue/dist/antd.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/antd-ui', '@/plugins/recaptcha', '@/plugins/v-mask'],
+  plugins: ['@/plugins/antd-ui', '@/plugins/v-mask'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -55,11 +50,11 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxt/image'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
