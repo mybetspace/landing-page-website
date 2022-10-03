@@ -49,7 +49,7 @@
         </a-menu>
       </a-dropdown>
     </header>
-    <main>
+    <main class="main">
       <section id="home" class="section-home section-padding mt-6">
         <div class="mt-5 section-width">
           <Banner

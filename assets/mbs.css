@@ -69,10 +69,11 @@ h4 {
   border-color: #e64d1a !important;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 !important;
 }
 
 .my-section,
@@ -158,10 +159,6 @@ main {
 .nav-item {
   display: flex;
   align-items: center;
-}
-
-main {
-  padding: 0 !important;
 }
 
 .section-padding {
