@@ -3,6 +3,8 @@ export default {
   publicRuntimeConfig: {
     apiBaseURL: process.env.API_BASE_URL,
   },
+
+  target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title:
@@ -50,11 +52,12 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxt/image'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios', '@nuxt/image'],
+  modules: ['@nuxtjs/axios'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
