@@ -4,7 +4,13 @@ export default {
     apiBaseURL: process.env.API_BASE_URL,
   },
 
+  target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
+
+  env: {
+    showBanner: process.env.SHOW_BANNERS,
+  },
+
   head: {
     title:
       'My Bet Space - Plataforma para Gestão de Banca para Trade Esportivo',
@@ -24,12 +30,7 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap',
-      },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
     script:
       process.env.DEVELOPMENT_MODE === 'true'
@@ -38,6 +39,7 @@ export default {
             {
               src: 'https://www.googletagmanager.com/gtag/js?id=G-DYMJG8L6XZ',
               async: true,
+              defer: true,
               name: 'ga-script',
             },
           ],
@@ -47,7 +49,7 @@ export default {
   css: ['ant-design-vue/dist/antd.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/antd-ui', '@/plugins/recaptcha', '@/plugins/v-mask'],
+  plugins: ['@/plugins/antd-ui', '@/plugins/v-mask'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -56,6 +58,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxt/image'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
