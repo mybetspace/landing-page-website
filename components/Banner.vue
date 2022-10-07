@@ -12,7 +12,7 @@
       >
         <nuxt-img
           class="w-100 image-desktop"
-          :src="image"
+          :src="footer ? imageFooter : image"
           alt="Banner de propaganda da 1XBet"
         />
         <nuxt-img
@@ -32,17 +32,22 @@ export default {
       type: String,
       required: true,
     },
+    footer: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
       show: true,
       image: '/Barcelona_Partnership_2023_400x100.gif',
       imageMobile: '/Barcelona_Partnership_2023_320x100.gif',
+      imageFooter: '/1x_Games_700x100.gif',
     }
   },
   computed: {
     showBanner() {
-      return this.show && process.env.showBanner === 'true'
+      return this.show /*&& process.env.showBanner === 'true'*/
     },
   },
   methods: {
