@@ -32,7 +32,7 @@
       <section id="home" class="section">
         <div class="px-4 pt-5 my-5 text-center">
           <h1 class="display-3 fw-bold">
-            Deseja fazer sua gestão de apostas de forma rápida e eficiente?
+            Deseja fazer sua gestão de apostas de forma mais rápida e eficiente?
           </h1>
           <div class="col-lg-6 mx-auto">
             <p class="lead my-6">
