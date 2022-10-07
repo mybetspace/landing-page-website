@@ -55,7 +55,7 @@
           <Banner
             class="pb-6"
             link="https://bit.ly/2-banner1xbet"
-            image="/2.Barcelona_Partnership_2023_320x100.gif"
+            image="/Barcelona_Partnership_2023_400x100.gif"
           />
           <h1 class="display-4 fw-bold pb-1 text-justify">
             Deseja fazer sua gestão de apostas de forma rápida e eficiente?
@@ -318,7 +318,7 @@
       <div class="floating-banner">
         <Banner
           link="https://bit.ly/1-Banner1xbet"
-          image="/1.Barcelona_Partnership_2023_340x100.gif"
+          image="/Barcelona_Partnership_2023_400x100.gif"
         />
       </div>
     </main>
