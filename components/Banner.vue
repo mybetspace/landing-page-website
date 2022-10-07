@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center" v-if="show">
+  <div class="d-flex justify-content-center" v-if="showBanner">
     <div class="banner-wrapper d-flex justify-content-end">
       <button class="banner-button" @click="closeBanner">
         <a-icon type="close" />
@@ -39,6 +39,11 @@ export default {
       image: '/Barcelona_Partnership_2023_400x100.gif',
       imageMobile: '/Barcelona_Partnership_2023_320x100.gif',
     }
+  },
+  computed: {
+    showBanner() {
+      return this.show && process.env.showBanner === 'true'
+    },
   },
   methods: {
     closeBanner() {
