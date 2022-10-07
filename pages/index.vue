@@ -54,7 +54,7 @@
         <div class="mt-5 section-width">
           <Banner class="pb-6" link="https://bit.ly/2-banner1xbet" />
           <h1 class="display-4 fw-bold pb-1 text-justify">
-            Deseja fazer sua gestão de apostas de forma rápida e eficiente?
+            Deseja fazer sua gestão de apostas de forma mais rápida e eficiente?
           </h1>
           <div>
             <p class="lead my-6 pb-6 text-justify">
