@@ -69,15 +69,16 @@ h4 {
   border-color: #e64d1a !important;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 !important;
 }
 
 .my-section,
 .section-home {
-  padding-top: 80px;
+  padding-top: 60px;
   position: relative;
 }
 
@@ -160,10 +161,6 @@ main {
   align-items: center;
 }
 
-main {
-  padding: 0 !important;
-}
-
 .section-padding {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -177,12 +174,8 @@ main {
   .my-section {
     padding-top: 80px;
   }
-  .section-home {
-    padding-top: 20px;
-  }
   .button-platform {
     flex-direction: column;
-    height: 70px !important;
     row-gap: 4px;
   }
 }
@@ -190,6 +183,9 @@ main {
 @media screen and (max-width: 770px) {
   .nav-pills {
     display: none;
+  }
+  .section-home {
+    padding-top: 20px;
   }
 }
 
@@ -224,13 +220,12 @@ main {
 }
 
 .button-platform {
-  height: 50px;
   font-size: 20px;
   display: flex;
   column-gap: 16px;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px;
+  padding: 10px;
 }
 
 .button-platform-logo {
@@ -259,4 +254,22 @@ main {
 .contact-detail {
   padding: 24px 8px;
   border-radius: 8px;
+}
+.banner-button,
+.banner-button:hover,
+.banner-button:active {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+.floating-banner {
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 16px;
 }
