@@ -4,6 +4,11 @@ export default {
     apiBaseURL: process.env.API_BASE_URL,
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
+
+  env: {
+    showBanner: process.env.SHOW_BANNERS,
+  },
+
   head: {
     title:
       'My Bet Space - Plataforma para Gestão de Banca para Trade Esportivo',
