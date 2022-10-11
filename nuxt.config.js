@@ -3,8 +3,6 @@ export default {
   publicRuntimeConfig: {
     apiBaseURL: process.env.API_BASE_URL,
   },
-
-  target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
 
   env: {
@@ -58,7 +56,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxt/image'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

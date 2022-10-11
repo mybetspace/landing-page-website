@@ -10,12 +10,12 @@
         aria-label="Ir para site do 1XBet"
         class="banner-image"
       >
-        <nuxt-img
+        <img
           class="w-100 image-desktop"
           :src="footer ? imageFooter : image"
           alt="Banner de propaganda da 1XBet"
         />
-        <nuxt-img
+        <img
           class="w-100 image-mobile"
           :src="imageMobile"
           alt="Banner de propaganda da 1XBet"
