@@ -8,7 +8,7 @@
         class="d-flex align-items-center ml-5 mb-md-0 me-md-auto"
         aria-label="Logo do MyBetSpace que leva à esta mesma página"
       >
-        <nuxt-img class="logo" src="/logo-dark.png" alt="Logo do MyBetSpace" />
+        <img class="logo" src="/logo-dark.png" alt="Logo do MyBetSpace" />
       </a>
 
       <ul class="nav nav-pills">
@@ -75,7 +75,7 @@
             </div>
           </div>
           <div class="graphic-wrapper">
-            <nuxt-img
+            <img
               class="img-fluid border rounded-3 my-6"
               src="/mbs.png"
               alt="Imagem com dois gráficos mostrando o resultado por dia e da banca da plataforma MyBetSpace"

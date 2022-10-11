@@ -6,7 +6,7 @@
     target="_blank"
   >
     <div class="text-center">Clique aqui para acessar</div>
-    <nuxt-img
+    <img
       class="button-platform-logo"
       src="/logo-white.png"
       alt="Logo do MyBetSpace"
