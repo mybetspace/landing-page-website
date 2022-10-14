@@ -43,6 +43,10 @@ export default {
           ],
   },
 
+  publicRuntimeConfig: {
+    showBanner: process.env.SHOW_BANNERS,
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['ant-design-vue/dist/antd.css'],
 
