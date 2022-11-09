@@ -47,7 +47,7 @@ export default {
   },
   computed: {
     showBanner() {
-      return this.show /*&& process.env.showBanner === 'true'*/
+      return this.show = false /*&& process.env.showBanner === 'true'*/
     },
   },
   methods: {

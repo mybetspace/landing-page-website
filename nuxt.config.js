@@ -6,7 +6,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
 
   env: {
-    showBanner: false,
+    showBanner: process.env.SHOW_BANNERS,
   },
 
   head: {
