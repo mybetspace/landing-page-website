@@ -6,7 +6,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
 
   env: {
-    showBanner: process.env.SHOW_BANNERS,
+    showBanner: false,
   },
 
   head: {
@@ -18,12 +18,12 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: `My Bet Space - Plataforma para Gestão de Banca para Trade Esportivo. Aqui você encontra uma melhor gestão das suas apostas esportivas da betfair, 
+        content: `My Bet Space - Plataforma para Gestão de Banca para Trade Esportivo. Aqui você encontra uma melhor gestão das suas apostas esportivas da betfair,
         aumento no lucro dos seus investimentos e praticidade na sua vida como trader.`,
       },
       {
         property: 'og:title',
-        content: `My Bet Space - Plataforma para Gestão de Banca para Trade Esportivo. Aqui você encontra uma melhor gestão das suas apostas esportivas da betfair, 
+        content: `My Bet Space - Plataforma para Gestão de Banca para Trade Esportivo. Aqui você encontra uma melhor gestão das suas apostas esportivas da betfair,
         aumento no lucro dos seus investimentos e praticidade na sua vida como trader.`,
       },
     ],
