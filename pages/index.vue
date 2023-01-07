@@ -215,11 +215,11 @@
               passos abaixo: <br />
               - Enviar comprovante de pagamento e o e-mail de cadastro para
               <a
-                href="mailto:suporte.mybetspace@gmail.com"
+                href="mailto:suporte@mybetspace.com"
                 target="_blank"
                 class="text-primary"
                 aria-label="Ir para provedor de email"
-                >suporte.mybetspace@gmail.com</a
+                >suporte@mybetspace.com</a
               >
               ou para WhatsApp
               <a
@@ -234,7 +234,7 @@
               No momento estamos apenas recebendo pagamento via PIX. O nome do
               destinatário do PIX é <i>Julierme de Oliveira Martins</i>. Caso
               não possua PIX, entre em contato pelo e-mail
-              <strong>suporte.mybetspace@gmail.com</strong>.
+              <strong>suporte@mybetspace.com</strong>.
             </p>
           </div>
         </div>
@@ -455,8 +455,8 @@ const contactItems = [
   {
     name: 'EMAIL',
     description: 'Dúvidas ou sugestões entre em contato pelo email',
-    link: 'mailto:suporte.mybetspace@gmail.com',
-    linkName: 'suporte.mybetspace@gmail.com',
+    link: 'mailto:suporte@mybetspace.com',
+    linkName: 'suporte@mybetspace.com',
     icon: 'envelope',
   },
   {
