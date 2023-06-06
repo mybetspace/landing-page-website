@@ -207,36 +207,6 @@
               </div>
             </div>
           </div>
-
-          <div class="subscriptions-messages">
-            <p class="subscriptions-important-message">
-              <b class="subscription-important"> IMPORTANTE:</b> Para podermos
-              identificar seu pagamento é obrigatório efetuar pelo menos um dos
-              passos abaixo: <br />
-              - Enviar comprovante de pagamento e o e-mail de cadastro para
-              <a
-                href="mailto:suporte@mybetspace.com"
-                target="_blank"
-                class="text-primary"
-                aria-label="Ir para provedor de email"
-                >suporte@mybetspace.com</a
-              >
-              ou para WhatsApp
-              <a
-                class="text-primary"
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=5548996436891&text="
-                aria-label="Iniciar conversa no WhatsApp com este número"
-                >(48) 99643-6891</a
-              >.
-            </p>
-            <p>
-              No momento estamos apenas recebendo pagamento via PIX. O nome do
-              destinatário do PIX é <i>Julierme de Oliveira Martins</i>. Caso
-              não possua PIX, entre em contato pelo e-mail
-              <strong>suporte@mybetspace.com</strong>.
-            </p>
-          </div>
         </div>
       </section>
       <section id="about" class="my-section w-100">
