@@ -159,7 +159,7 @@
             <h1 class="mb-6 text-primary">Preços</h1>
             <p class="fs-5 text-muted">
               <b
-                >Todos os usuários novos tem direito à 10 dias gratuitos
+                >Todos os usuários novos tem direito à 7 dias gratuitos
                 após a abertura de conta.</b
               ><br />
               Após o período gratuito para continuar usando o My Bet Space é
