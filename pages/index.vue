@@ -423,24 +423,24 @@ const planItems = [
   },
   {
     name: 'Trimestral',
-    price: '18,99',
+    price: '19,50',
     description: '3 meses de assinatura',
-    totalPrice: '56,97',
-    discount: '5',
+    totalPrice: '58,50',
+    discount: '2,5',
   },
   {
     name: 'Semestral',
-    price: '18,49',
+    price: '18,99',
     description: '6 meses de assinatura',
-    totalPrice: '110,94',
-    discount: '7,5',
+    totalPrice: '113,94',
+    discount: '5,00',
   },
   {
     name: 'Anual',
-    price: '17,99',
+    price: '18,50',
     description: '12 meses de assinatura',
-    totalPrice: '215,88',
-    discount: '10',
+    totalPrice: '222,00',
+    discount: '7,50',
   },
 ]
 
