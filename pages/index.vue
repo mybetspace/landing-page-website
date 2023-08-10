@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid bg-dark p-0">
+  <div class="container-fluid bg-black p-0">
     <header id="main-header"
       class="d-flex flex-wrap align-items-center py-3 mb-4 fixed-top justify-content-between bg-dark-opacity">
       <a href="/" class="d-flex align-items-center ml-5 mb-md-0 me-md-auto"
@@ -170,17 +170,17 @@
           </div>
         </div>
       </section>
-      <section id="about" class="my-section w-100">
-        <div class="bg-light w-100 section-padding d-flex flex-column align-items-center text-center about-wrapper">
+      <section id="about" class="my-section w-100 h-100 position-relative">
+        <div class="background-parallax w-100 section-padding d-flex flex-column align-items-center text-center about-wrapper">
           <div class="section-width col-lg-8 d-flex flex-column align-items-center">
             <h1 class="text-primary-custom">Missão</h1>
-            <h4 class="pt-4 pb-2 text-justify">
+            <h4 class="pt-4 pb-2 text-justify text-white">
               A My Bet Space tem como missão é ajudar a comunidade de trader
               Esportivo a economizar seu tempo planilhando, auxiliar no dia a
               dia do trade, para que de forma mais ágil a validar consiga seu
               método, para ser mais lucrativo.
             </h4>
-            <p class="text-justify">
+            <p class="text-justify text-white">
               Resumindo de uma forma simples a nossa plataforma é uma especie de
               planilha online em que o usuário só precisa preencher o seu método
               e o resto agente faz pra você. Pegamos todos os jogos, nomes dos
@@ -525,6 +525,17 @@ export default {
 
 .reverse{
   flex-direction: inherit;
+}
+
+.background-parallax{
+  background-image: url('@/static/bgfooter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 900px) {
