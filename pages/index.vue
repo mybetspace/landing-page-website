@@ -1,10 +1,11 @@
 <template>
-  <div class="container-fluid bg-black p-0">
+  <div class="container-fluid bg-gray-custom p-0">
     <header id="main-header"
       class="d-flex flex-wrap align-items-center py-3 mb-4 fixed-top justify-content-between bg-dark-opacity">
       <a href="/" class="d-flex align-items-center ml-5 mb-md-0 me-md-auto"
         aria-label="Logo do MyBetSpace que leva à esta mesma página">
-        <img class="logo" src="/logo-white-orange.png" alt="Logo do MyBetSpace" />
+        <img class="logo d-none d-md-block" src="/logo-white-orange.png" alt="Logo do MyBetSpace" />
+        <img class="logo d-block d-md-none" src="/favicon-dark.png" alt="Logo do MyBetSpace" />
       </a>
 
       <ul class="nav nav-pills d-none d-md-inline-flex">
@@ -15,8 +16,21 @@
           <a v-else :href="item.link" :aria-label="`Ir para seção ${item.name}`" class="nav-link h-100">{{ item.name
           }}</a>
         </li>
+        <li>
+          <button class="cta-btn">
+            <a class="text-decoration-none text-white" href="https://app.mybetspace.com" target="_blank">
+              Login
+            </a>
+          </button>
+          <button class="cta-btn-secondary">
+            <a class="text-decoration-none text-white" href="https://app.mybetspace.com/signup" target="_blank">
+              Cadastre-se Grátis
+            </a>
+          </button>
+        </li>
       </ul>
-      <a-dropdown :trigger="['click']" class="menu-pills">
+      
+      <!-- <a-dropdown :trigger="['click']" class="menu-pills">
         <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
           <a-icon class="menu-icon" type="menu" />
         </a>
@@ -27,7 +41,20 @@
               {{ item.name }}</a>
           </a-menu-item>
         </a-menu>
-      </a-dropdown>
+      </a-dropdown> -->
+
+      <div class="d-block d-md-none d-flex flex-inline mt-2">
+        <button class="cta-btn">
+          <a class="text-decoration-none text-white" href="https://app.mybetspace.com" target="_blank">
+            Login
+          </a>
+        </button>
+        <button class="cta-btn-secondary">
+          <a class="text-decoration-none text-white" href="https://app.mybetspace.com/signup" target="_blank">
+            Cadastre-se Grátis
+          </a>
+        </button>
+      </div>
     </header>
     <main class="main">
       <section id="home" class="section-home container-fluid p-0">
@@ -43,7 +70,7 @@
               <div class="w-100 h-100 position-absolute top-0">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 p-3 p-md-0">
                   <h1 class="text-white text-center banner-txt">
-                    Sua gestão de apostas de <br /> forma mais rápida e eficiente
+                    Cadastre-se e GANHE <br /> 7 Dias grátis na Plataforma
                   </h1>
                   <p class="text-white description-banner">A My Bet Space é uma plataforma profissional de gestão de banca
                     para trade esportivo na exchange da betfair.</p>
@@ -53,8 +80,8 @@
             </div>
             <div class="carousel-item">
               <div class="position-relative">
-                <img src="@/static/banner3.jpg" class="d-none d-md-block w-100" alt="Quer melhorar suas apostas banner">
-                <img src="@/static/bannermob2.jpg" class="d-block d-md-none w-100"
+                <img src="@/static/bannertennis.jpg" class="d-none d-md-block w-100" alt="Quer melhorar suas apostas banner">
+                <img src="@/static/bannertennismob.jpg" class="d-block d-md-none w-100"
                   alt="Quer melhorar suas apostas banner">
                 <div class="opacity-banner" />
               </div>
@@ -114,7 +141,8 @@
                     <i class="bi bi-check-circle feature-icon"></i>
                     <h2 class="mb-3">Facilidade em validar seu método</h2>
                     <p>
-                      Valide seu método de forma mais rápida e simples. Saiba exatamente em que método você é mais lucrativo
+                      Valide seu método de forma mais rápida e simples. Saiba exatamente em que método você é mais
+                      lucrativo
                       e o método em que perde dinheiro.
                     </p>
                   </div>
@@ -157,13 +185,15 @@
               <div :class="'pricing-table-3 ' + plan.plan">
                 <div class="pricing-table-header">
                   <h4><strong>{{ plan.name }}</strong></h4>
+                  <p v-if="plan.discount">{{plan.discount}}% de desconto</p>
                 </div>
                 <div class="price"><strong>R${{ plan.price
                 }}</strong> {{ plan.period }}</div>
                 <div class="pricing-body">
                   <ul class="pricing-table-ul">
-                    <li><i class="fa fa-send"></i> {{ plan.description }}</li>
-                  </ul><a href="#" class="view-more">Assinar</a>
+                    <li> {{ plan.description }}</li>
+                    <li> Preço total do Plano: <strong>R${{plan.totalPrice }}</strong></li>
+                  </ul><a href="https://app.mybetspace.com" target="_blank" class="view-more">Assinar</a>
                 </div>
               </div>
             </div>
@@ -171,7 +201,8 @@
         </div>
       </section>
       <section id="about" class="my-section w-100 h-100 position-relative">
-        <div class="background-parallax w-100 section-padding d-flex flex-column align-items-center text-center about-wrapper">
+        <div
+          class="background-parallax w-100 section-padding d-flex flex-column align-items-center text-center about-wrapper">
           <div class="section-width col-lg-8 d-flex flex-column align-items-center">
             <h1 class="text-primary-custom">Missão</h1>
             <h4 class="pt-4 pb-2 text-justify text-white">
@@ -193,49 +224,20 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="my-section section-padding">
-        <div class="section-width">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="section-title text-center mb-4 pb-2">
-                <h1 class="text-primary-custom">Contato</h1>
-                <p class="text-muted text-center para-desc mx-auto mb-0">
-                  Dúvidas ou sugestões entre em contato
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div v-for="(contact, i) in contactItems" :key="`contact${i}`" class="col-md-4 mt-4 pt-2">
-              <div class="contact-detail text-center bg-light">
-                <div class="icon text-primary-custom">
-                  <i :class="`bi bi-${contact.icon}`"></i>
-                </div>
-                <div class="content mt-4">
-                  <h6 class="title text-uppercase font-weight-bold">
-                    {{ contact.name }}
-                  </h6>
-                  <p class="text-muted text-center" v-html="contact.description"></p>
-                  <a v-if="contact.link" :href="contact.link" class="text-primary-custom" target="_blank"
-                    :aria-label="contactAriaLabel(i)">{{ contact.linkName }}</a>
-                  <div v-else>&nbsp;</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <div class="floating-banner">
         <Banner link="https://bit.ly/1-Banner1xbet" :footer="true" />
       </div>
     </main>
-    <footer class="text-center text-white" style="background-color: #f1f1f1">
-      <!-- Grid container -->
-      <div class="container pt-4">
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="my-5">
+
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
         <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/mybetspace"
+        <section class="bg-primary-custom d-flex justify-content-evenly p-4">
+          <div>
+            <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-white" href="https://www.facebook.com/mybetspace"
             target="_blank" role="button" data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
 
           <!-- Twitter -->
@@ -257,7 +259,7 @@
           <!--                    ></a>-->
 
           <!-- Instagram -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/mybetspace"
+          <a class="btn btn-link btn-floating btn-lg text-white" href="https://www.instagram.com/mybetspace"
             target="_blank" role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
 
           <!-- Linkedin -->
@@ -269,21 +271,80 @@
           <!--                    ><i class="fab fa-linkedin"></i-->
           <!--                    ></a>-->
           <!-- Youtube -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+          <a class="btn btn-link btn-floating btn-lg text-white"
             href="https://www.youtube.com/channel/UC6ivzleevCLsb9bgMKSmmqg" target="_blank" role="button"
             data-mdb-ripple-color="dark"><i class="bi bi-youtube"></i></a>
+          </div>
+          <!-- Right -->
         </section>
         <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div class="text-center text-dark p-3">
-        © 2021 Copyright
-        <a class="text-dark" href="https://www.mybetspace.com/">My Bet Space</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">My Bet Space</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; height: 2px" />
+                <p>
+                  Sua gestão de apostas de forma mais rápida e eficiente
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Links</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; height: 2px" />
+                <p>
+                  <a href="#home" class="text-white">Home</a>
+                </p>
+                <p>
+                  <a href="#features" class="text-white">Funcionalidades</a>
+                </p>
+                <p>
+                  <a href="#pricing" class="text-white">Ofertas</a>
+                </p>
+                <p>
+                  <a href="#about" class="text-white">Missão</a>
+                </p>
+                <p>
+                  <a href="#contact" class="text-white">Contato</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">CONTATO</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; height: 2px" />
+                  <p><i class="bi bi-geo-alt-fill mr-3 text-primary-custom"></i> Florianópolis - SC BRASIL</p>
+                  <p><i class="bi bi-envelope-fill mr-3 text-primary-custom"></i> suporte@mybetspace.com</p>
+                  <p><i class="bi bi-whatsapp mr-3 text-primary-custom"></i> +55 48 99643-6891</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2021 Copyright
+          <a class="text-primary-custom" href="https://www.mybetspace.com/">My Bet Space</a>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
   </div>
 </template>
 
@@ -446,6 +507,10 @@ export default {
   flex: 0 1 400px;
 }
 
+.bg-gray-custom {
+  background-color: #1c2331 !important;
+}
+
 .bg-dark-opacity {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -523,11 +588,11 @@ export default {
   background-color: #c5370a;
 }
 
-.reverse{
+.reverse {
   flex-direction: inherit;
 }
 
-.background-parallax{
+.background-parallax {
   background-image: url('@/static/bgfooter.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -536,6 +601,46 @@ export default {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+
+.cta-btn{
+  background-color: #e64d1a;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-right: 5px;
+}
+
+.cta-btn:hover{
+  background-color: #c5370a;
+  transition: background-color 0.3s;
+}
+
+.cta-btn-secondary{
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: background-color 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cta-btn-secondary:hover{
+  background-color: #fff;
+  color: #e64d1a;
+  transition: background-color 0.3s;
+}
+
+.cta-btn-secondary:hover > a{
+  color:#e64d1a !important;
 }
 
 @media only screen and (max-width: 900px) {
@@ -573,8 +678,16 @@ export default {
   .pricingTable {
     margin-bottom: 35px;
   }
-  .reverse{
+
+  .reverse {
     flex-direction: column-reverse;
+  }
+
+  /* Estilo para o header ao rolar a página */
+  .header-small {
+    height: 100px;
+    /* Defina a altura desejada */
+    transition: height 0.3s ease-in-out;
   }
 }
 </style>
